@@ -3,3 +3,5 @@ groups:
     rules:
     - record: job:node_cpu_seconds:avg_idle
       expr: avg without(cpu)(rate(node_cpu_seconds_total{mode="idle"}[5m]))
+
+# After adding the new file and adding above content, make sure to add the same to the config file and restart prometheus.
