@@ -1,0 +1,17 @@
+This is the set of commands/steps to be performed for setting up the Ubuntu Desktop for Promtheus Boiler-Plate tests.
+
+Step 1: Follow through the standard process of created the Ubuntu instance on your choice of Cloud Platform.
+
+Step 2: Connect to the Terminal of the machine
+  >> # sudo apt update && apt upgrade
+  >> # sudo apt install ubuntu-desktop -y
+  >> *** Install KDM on the same
+  >> # sudo apt install lightdm
+  During the installation process, you will be prompted to choose between GDM3 (the default display manager of GNOME) and LightDM.
+  >> # sudo systemctl start lightdm.service
+  >> # sudo service lightdm start
+  >> *** Setup Remote access to the server ***
+  >> # sudo apt-get install xrdp -y
+  >> # sudo ufw allow 3389/tcp
+  >> *** Check if UFW is on, if on, off it
+  >> # sudo ufw disable
