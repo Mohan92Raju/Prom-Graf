@@ -15,3 +15,10 @@ Step 2: Connect to the Terminal of the machine
   >> # sudo ufw allow 3389/tcp
   >> *** Check if UFW is on, if on, off it
   >> # sudo ufw disable
+  
+  Step 3: Mostly your ubuntu will have python 3.x installed on it already. So proceed to install Python pip
+  >> sudo apt update
+  >> sudo apt install python3-pip
+  
+  
+  
