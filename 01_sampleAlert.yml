@@ -5,4 +5,5 @@ groups:
       expr: avg without(cpu)(rate(node_cpu_seconds_total{mode="idle"}[5m]))
 
     - alert: NodeExporterDown
+      # make sure to mention the job name referencing correclty
       expr: up{job="node_exporter"} == 0
