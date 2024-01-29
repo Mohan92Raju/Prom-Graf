@@ -74,5 +74,5 @@ scrape_configs:
 ```
 > Reload Prometheus Configuration
 ```ruby
-curl -x -XPOST localhost:9090/-/reload
+curl -x -XPOST <host_IP>:9090/-/reload
 ```
